@@ -1,0 +1,11 @@
+[Unit]
+Description=Telegram Bot
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/ubuntu/env/bin/python3 /home/ubuntu/class_schedule.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
